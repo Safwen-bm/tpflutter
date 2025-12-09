@@ -28,7 +28,7 @@ class _OfferPageState extends State<OfferPage> {
           itemBuilder: (context, index, realIndex) {
             bool isActive = index == _current;
             return Padding(
-              padding: const EdgeInsets.symmetric(vertical: 12.0), // gap top & bottom
+              padding: const EdgeInsets.symmetric(vertical: 12.0), 
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(12),
                 child: Stack(
@@ -40,7 +40,7 @@ class _OfferPageState extends State<OfferPage> {
                     ),
                     if (!isActive)
                       Container(
-                        color: Colors.black.withOpacity(0.5), // dark overlay for inactive slides
+                        color: Colors.black.withOpacity(0.5), 
                       ),
                   ],
                 ),
