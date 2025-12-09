@@ -36,6 +36,10 @@ dependencies:
   cupertino_icons: ^1.0.8
   curved_labeled_navigation_bar: ^2.0.6
   carousel_slider: ^5.1.1
+  firebase_auth: ^6.1.2
+  firebase_core: ^4.2.1
+  google_sign_in: ^7.2.0
+  http: ^1.6.0
 
 dev_dependencies:
   flutter_test:
@@ -64,6 +68,7 @@ flutter:
      - assets/home1.jpeg
      - assets/slide1.jpg
      - assets/slide2.jpg
+     - assets/google.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
