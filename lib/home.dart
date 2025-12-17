@@ -16,46 +16,49 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   int _page = 0;
 
-  List<Widget> list = [
-    Homepage(),
-    Searchpage(),
-    Chatpage(),
-    Profilepage(),
+  final List<Widget> _pages = [
+     Homepage(),
+     Searchpage(),
+     Chatpage(),
+     Profilepage(),
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Center(child: Text("Navigation")), 
-        backgroundColor: Color.fromRGBO(234, 218, 240, 1),
-      ),
-      body: list[_page],
+      body: _pages[_page],
       bottomNavigationBar: CurvedNavigationBar(
+        backgroundColor: Colors.transparent,
+        buttonBackgroundColor: Colors.blue[700],
+        color: Colors.blue[50]!,
+        animationCurve: Curves.easeInOut,
+        animationDuration: const Duration(milliseconds: 300),
+        height: 65,
+        index: _page,
         onTap: (index) {
           setState(() {
             _page = index;
           });
         },
-        backgroundColor: Color.fromRGBO(234, 218, 240, 1),
-        items: [
+        items: const [
           CurvedNavigationBarItem(
-            child: Icon(Icons.home),
-            label: "Home",
+            child: Icon(Icons.home_outlined, size: 30),
+            label: 'Accueil',
           ),
           CurvedNavigationBarItem(
-            child: Icon(Icons.search),
-            label: "Search",
+            child: Icon(Icons.search, size: 30),
+            label: 'Recherche',
           ),
           CurvedNavigationBarItem(
-            child: Icon(Icons.message),
-            label: "Chat",
+            child: Icon(Icons.chat_bubble_outline, size: 30),
+            label: 'Messages',
           ),
           CurvedNavigationBarItem(
-            child: Icon(Icons.perm_identity),
-            label: "Profile",
+            child: Icon(Icons.person_outline, size: 30),
+            label: 'Profil',
           ),
         ],
-    ));
+      ),
+    );
   }
 }
