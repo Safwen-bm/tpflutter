@@ -1,10 +1,10 @@
 import 'package:curved_labeled_navigation_bar/curved_navigation_bar.dart';
 import 'package:curved_labeled_navigation_bar/curved_navigation_bar_item.dart';
 import 'package:flutter/material.dart';
-import 'package:tp2/chatPage.dart';
-import 'package:tp2/homePage.dart';
-import 'package:tp2/profilePage.dart';
-import 'package:tp2/searchPage.dart';
+import 'package:immo_plus/chatPage.dart';
+import 'package:immo_plus/homePage.dart';
+import 'package:immo_plus/profilePage.dart';
+import 'package:immo_plus/searchPage.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});

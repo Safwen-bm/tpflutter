@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tp2/itemHome.dart';
-import 'package:tp2/offerPage.dart';
+import 'package:immo_plus/itemHome.dart';
+import 'package:immo_plus/offerPage.dart';
 
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
